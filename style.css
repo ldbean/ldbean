@@ -76,23 +76,39 @@ h1 {
   background-color: #fff;
 }
 .thumbnail {
-  height: 200px;
-  width: 200px;
- align-self: auto;
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .card-body {
-  background-color: #000;
-  padding: 10px;
+  background-color: linear-gradient(rgba(0,0,0,0), rgb(0, 0, 0));
+  padding: 10px; 
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:80%;
+  width: 80%;
+  opacity: 0;
 }
+.card-body:hover  {
+    opacity: 1;
+  }
 .card-text{
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .front {
-  padding: 12px 42px;
+    padding: 10px;
   font-size: 1.25rem;
   background: #000;
   color: white;
+  width: 250px;
+  height: 250px;
   transform: translateY(-6px) translateX(6px);
 }
 .pushable:active .front {
