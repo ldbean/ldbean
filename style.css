@@ -4,9 +4,16 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #fff;
   margin: 0;
+  width: 100vw;
 }
 a {
   text-decoration: none;
+}
+nav{
+    overflow: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
 }
 .navbar {
   display: flex;
@@ -32,6 +39,9 @@ a {
   font-size: 12px;
   margin: 0 12px;
 }
+.nav-link:hover{
+    color: #000;
+}
 .nav {
   display: inline-flex;
 }
@@ -56,12 +66,12 @@ h1 {
   font-size: 40px;
 }
 .container {
-  padding: 15px;
+  padding: 25px;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  flex-flow:row wrap;
 }
 #shelf, #contact-form {
   background-color: #56f;
@@ -69,18 +79,21 @@ h1 {
   height: auto;
   width: 80vw;
 }
+#shelf{
+justify-content: left;
+}
 .pushable {
   border: none;
   padding: 0;
   cursor: pointer;
   background-color: #fff;
+  margin: 25px 20px;
 }
 .thumbnail {
   display: block;
   height: 100%;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 .card-body {
   background-color: linear-gradient(rgba(0,0,0,0), rgb(0, 0, 0));
@@ -143,14 +156,14 @@ button {
     cursor: pointer;
     font-weight: 500;
 }
-.feedback-card {
+.contact-card {
     border: 1px solid black;
     max-width: 980px;
     background-color: #fff;
     box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
     margin-top: 30px;
   }
-  .feedback-header {
+  .contact-header {
     text-align: center;
     padding: 8px;
     font-size: 14px;
@@ -158,19 +171,24 @@ button {
     color: #000;
     border-bottom: 1px solid black;
   }
-  .feedback-body {
+  .contact-body {
     padding: 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
   }
-  .feedback-body__name {
+  .contact-body__name {
     margin-bottom: 10px;
   }
-  .feedback-body__email {
+  .contact-body__email {
       margin-bottom: 10px;
   }
-  .feedback-body button {
+  .contact-body button {
     margin-top: 10px;
     align-self: flex-end;
   }
+/* ---------footer--------- */
+
+#social-icons{
+    width: 200px;
+}
