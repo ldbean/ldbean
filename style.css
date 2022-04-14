@@ -101,9 +101,8 @@ h1 {
 .card-text{
   font-size: 12px;
 }
-
 .front {
-    padding: 10px;
+  padding: 10px;
   font-size: 1.25rem;
   background: #000;
   color: white;
@@ -113,4 +112,7 @@ h1 {
 }
 .pushable:active .front {
   transform: translateY(-2px);
+}
+#self-portrait{
+    width: 300px;
 }
