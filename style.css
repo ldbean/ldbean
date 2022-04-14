@@ -63,7 +63,7 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
 }
-#shelf {
+#shelf, #contact-form {
   background-color: #56f;
   margin: 25px auto;
   height: auto;
@@ -116,3 +116,61 @@ h1 {
 #self-portrait{
     width: 300px;
 }
+
+/* ---------contact form--------- */
+#contact-form {
+    flex-direction: column;
+    padding: 200px 0;
+}
+
+input, button, textarea {
+    border: rgba(0, 0, 0, 0.6) 2px solid ;
+    background-image:none;
+    background-color: #dadad3;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+}
+input:focus, button:focus, textarea:focus {
+    outline: none;
+}
+textarea {
+    min-height: 50px;
+    min-width: 200px;
+    max-width: 900px;
+    resize: both;
+}
+button {
+    cursor: pointer;
+    font-weight: 500;
+}
+.feedback-card {
+    border: 1px solid black;
+    max-width: 980px;
+    background-color: #fff;
+    box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+    margin-top: 30px;
+  }
+  .feedback-header {
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    border-bottom: 1px solid black;
+  }
+  .feedback-body {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .feedback-body__name {
+    margin-bottom: 10px;
+  }
+  .feedback-body__email {
+      margin-bottom: 10px;
+  }
+  .feedback-body button {
+    margin-top: 10px;
+    align-self: flex-end;
+  }
