@@ -44,8 +44,20 @@
     </section>
     <section id="projects">
       <h1>projects</h1>
+      <div id="modal-window" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Modal Header</h2>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+            <p>Some other text...</p>
+          </div>
+        </div>
+      </div>
       <div id="shelf" class="container">
-        <a href="/anglerBeast" class="card pushable">
+        <a class="card pushable modal-open">
           <div class="card front">
             <img class="thumbnail" src="/public/anglerBeast.jpg" alt="" />
             <div class="card-body">
@@ -159,24 +171,6 @@
             <textarea type="text" class="contact-body__message" placeholder="Message" name="entry.984779722">Let's make something awesome.</textarea>
             <button class="contact-body__submit" action="submit">SEND</button>
           </form>
-          <!-- prevent redirect -->
-          <script>
-            $('contact-form').submit(function(e) {
-                e.preventDefault();
-                $.ajax({
-                    url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfyQEqz30JG_s-ihZEXLMsz10xT8te1A_yG6W70nRsHs79hrA/formResponse?entry.2005620554=leighann&entry.1045781291=leighann%40ldbean.com&entry.984779722=yes",
-                    data: $(this).serialize(),
-                    type: "POST",
-                    dataType: "xml",
-                    success: function(data) {
-                        console.log('Submission successful');
-                    },
-                    error: function(xhr, status, error) {
-                        console.log('Submission failed: ' + error);
-                    }
-                });
-            });
-        </script>
         </div>
       </div>
       
@@ -197,5 +191,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/scripts.js"></script>
   </body>
 </html>

@@ -2,7 +2,7 @@ body {
   background-color: rgb(0, 0, 0);
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
-font-family:'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   color: #fff;
   margin: 0;
   width: 100vw;
@@ -10,11 +10,11 @@ font-family:'Courier New', Courier, monospace;
 a {
   text-decoration: none;
 }
-nav{
-    overflow: hidden;
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
+nav {
+  overflow: hidden;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
 }
 .navbar {
   display: flex;
@@ -40,17 +40,10 @@ nav{
   font-size: 12px;
   margin: 0 12px;
 }
-.nav-link:hover{
-    /* color: rgb(0, 207, 155); */
-    text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #0fa,
-    0 0 82px #0fa,
-    0 0 92px #0fa,
-    0 0 102px #0fa,
-    0 0 151px #0fa;
+.nav-link:hover {
+  /* color: rgb(0, 207, 155); */
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
 }
 .nav {
   display: inline-flex;
@@ -85,18 +78,19 @@ h1 {
   /* flex-direction: row; */
   justify-content: space-around;
   align-items: center;
-  flex-flow:row wrap;
+  flex-flow: row wrap;
 }
-#shelf, #contact-form {
+#shelf,
+#contact-form {
   background-color: #56f;
   margin: 25px auto;
   height: auto;
   width: 80vw;
 }
-#shelf{
- /* justify-content: left; */
-    max-height: 1000px;
-    overflow: scroll;
+#shelf {
+  /* justify-content: left; */
+  max-height: 1000px;
+  overflow: scroll;
 }
 .pushable {
   border: none;
@@ -112,22 +106,22 @@ h1 {
   margin: auto;
 }
 .card-body {
-  background-color: linear-gradient(rgba(0,0,0,0), rgb(0, 0, 0));
-  padding: 10px; 
+  background-color: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  padding: 10px;
   margin: auto;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height:80%;
+  height: 80%;
   width: 80%;
   opacity: 0;
 }
-.card-body:hover  {
-    opacity: 1;
-  }
-.card-text{
+.card-body:hover {
+  opacity: 1;
+}
+.card-text {
   font-size: 12px;
 }
 .front {
@@ -142,74 +136,116 @@ h1 {
 .pushable:active .front {
   transform: translateY(-2px);
 }
-#self-portrait{
-    width: 300px;
+#self-portrait {
+  width: 300px;
 }
-#bio{
-max-width: 50vw;
+#bio {
+  max-width: 50vw;
 }
+/* ---------modal--------- */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  color:#000;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* ---------contact form--------- */
 #contact-form {
-    flex-direction: column;
-    padding: 200px 20px;
+  flex-direction: column;
+  padding: 200px 20px;
 }
 #contact-form > p {
-    margin: 15px 15% ;
+  margin: 15px 15%;
 }
 
-input, button, textarea {
-    border: rgba(0, 0, 0, 0.6) 2px solid ;
-    background-image:none;
-    background-color: #dadad3;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 5px;
+input,
+button,
+textarea {
+  border: rgba(0, 0, 0, 0.6) 2px solid;
+  background-image: none;
+  background-color: #dadad3;
+  font-family: "Courier New", Courier, monospace;
+  padding: 5px;
 }
-input:focus, button:focus, textarea:focus {
-    outline: none;
+input:focus,
+button:focus,
+textarea:focus {
+  outline: none;
 }
 textarea {
-    min-height: 50px;
-    min-width: 200px;
-    max-width: 900px;
-    resize: both;
+  min-height: 50px;
+  min-width: 200px;
+  max-width: 900px;
+  resize: both;
 }
 button {
-    cursor: pointer;
-    font-weight: 500;
+  cursor: pointer;
+  font-weight: 500;
 }
 .contact-card {
-    border: 1px solid black;
-    max-width: 980px;
-    background-color: #fff;
-    box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
-    margin-top: 30px;
-  }
-  .contact-header {
-    text-align: center;
-    padding: 8px;
-    font-size: 14px;
-    font-weight: 700;
-    color: #000;
-    border-bottom: 1px solid black;
-  }
-  .contact-body {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  .contact-body__name {
-    margin-bottom: 10px;
-  }
-  .contact-body__email {
-      margin-bottom: 10px;
-  }
-  .contact-body button {
-    margin-top: 10px;
-    align-self: flex-end;
-  }
+  border: 1px solid black;
+  max-width: 980px;
+  background-color: #fff;
+  box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+  margin-top: 30px;
+}
+.contact-header {
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  border-bottom: 1px solid black;
+}
+.contact-body {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.contact-body__name {
+  margin-bottom: 10px;
+}
+.contact-body__email {
+  margin-bottom: 10px;
+}
+.contact-body button {
+  margin-top: 10px;
+  align-self: flex-end;
+}
 /* ---------footer--------- */
 
-#social-icons{
-    width: 200px;
+#social-icons {
+  width: 200px;
 }
