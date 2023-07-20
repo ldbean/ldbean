@@ -6,6 +6,7 @@ body {
   color: #fff;
   margin: 0;
   width: 100vw;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -86,11 +87,12 @@ h1 {
   margin: 25px auto;
   height: auto;
   width: 80vw;
+  overflow: hidden; /* Hide scrollbars */
 }
 #shelf {
   /* justify-content: left; */
   max-height: 1000px;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 .pushable {
   border: none;
