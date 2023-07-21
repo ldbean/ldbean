@@ -77,22 +77,26 @@ h1 {
   padding: 25px;
   display: flex;
   /* flex-direction: row; */
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 #shelf,
 #contact-form {
-  background-color: #56f;
+  /* background-color: #56f; */
   margin: 25px auto;
-  height: auto;
+  height: 50vh;
   width: 80vw;
   overflow: hidden; /* Hide scrollbars */
 }
 #shelf {
+  background-color: rgb(44, 44, 44);
   /* justify-content: left; */
   max-height: 1000px;
   /* overflow: scroll; */
+}
+#contact-form {
+  background-color: #56f;
 }
 .pushable {
   border: none;
