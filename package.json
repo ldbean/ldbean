@@ -1,0 +1,21 @@
+{
+  "name": "ldbean",
+  "version": "1.0.0",
+  "description": "ldbean's Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ldbean/ldbean.git"
+  },
+  "author": "ldbean",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ldbean/ldbean/issues"
+  },
+  "homepage": "https://github.com/ldbean/ldbean#readme",
+  "type": "module"
+
+}

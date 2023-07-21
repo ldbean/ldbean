@@ -16,6 +16,7 @@
 
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link href="style.css" rel="stylesheet" />
+  <script defer src="/js/projects.js"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -48,16 +49,17 @@
         <div class="modal-content">
           <div class="modal-header">
             <span class="close">&times;</span>
-            <h2>Modal Header</h2>
+            <h2 id="project-title">Modal Header</h2>
           </div>
           <div class="modal-body">
-            <p>Some text in the Modal Body</p>
-            <p>Some other text...</p>
+            <div id="project-images"></div>
+            <p id="project-description">Some text in the Modal Body</p>
+            <p id="project-tags">Some other text...</p>
           </div>
         </div>
       </div>
       <div id="shelf" class="container">
-        <a class="card pushable modal-open">
+         <!-- <a class="card pushable modal-open">
           <div class="card front">
             <img class="thumbnail" src="/public/anglerBeast.jpg" alt="" />
             <div class="card-body">
@@ -67,8 +69,8 @@
               </p>
             </div>
           </div>
-        </a>
-        <a href="/anglerBeast" class="card pushable">
+        </a> -->
+        <!--<a href="/anglerBeast" class="card pushable">
           <div class="card front">
             <img class="thumbnail" src="/public/anglerBeast.jpg" alt="" />
             <div class="card-body">
@@ -134,7 +136,7 @@
               </p>
             </div>
           </div>
-        </a>
+        </a> -->
       </div>
     </section>
     <section id="about">
@@ -148,7 +150,7 @@
           </p>
         </div>
         <img
-          src="/public/leighannbaxa.jpg"
+          src="/public/smol23bg2transparentSmallround.png"
           alt="leighann baxa"
           id="self-portrait"
         />
@@ -161,7 +163,7 @@
           I want to work with you. Please leave a message.
         </p>
         <div class="contact-card">
-          <div class="contact-header">CONTACT FORM</div>
+          <div class="contact-header">HEY YOU</div>
           <script type="text/javascript">var submitted=false;</script>
           <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
           onload="if(submitted) {window.location='thankyou.html';}"></iframe> 
@@ -186,6 +188,9 @@
       </div>
       <p>works and site &copy; 2022 leighann ldbean baxa</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
