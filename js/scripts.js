@@ -7,21 +7,18 @@ console.log(projectContainer)
 pieces = [
   {
     title: "Project 1",
-    slug: "project-1",
     thumbnail: "https://picsum.photos/200/300",
     description: "This is a description of project 1",
     images: ["https://picsum.photos/200/300"],
   },
   {
     title: "Project 2",
-    slug: "project-2",
     thumbnail: "https://picsum.photos/200/300",
     description: "This is a description of project 2",
     images: ["https://picsum.photos/200/300", "https://picsum.photos/200/300"],
   },
   {
     title: "Project 3",
-    slug: "project-3",
     thumbnail: "https://picsum.photos/200/300",
     description: "This is a description of project 3",
     images: [
@@ -32,15 +29,61 @@ pieces = [
   },
   {
     title: "Project 4",
-    slug: "project-4",
     thumbnail: "https://picsum.photos/200/300",
     description: "This is a description of project 4",
     images: [
       "https://picsum.photos/200/300",
       "https://picsum.photos/200/300",
       "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300",
     ],
   },
+  {
+    title: "Project 4",
+    thumbnail: "https://picsum.photos/200/300",
+    description: "This is a description of project 4",
+    images: [
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300",
+    ],
+  },
+  {
+    title: "Project 4",
+    thumbnail: "https://picsum.photos/200/300",
+    description: "This is a description of project 4",
+    images: [
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300",
+    ],
+  },
+  {
+    title: "Project 4",
+    thumbnail: "https://picsum.photos/200/300",
+    description: "This is a description of project 4",
+    images: [
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300",
+    ],
+  },
+  {
+    title: "Project 4",
+    thumbnail: "https://picsum.photos/200/300",
+    description: "This is a description of project 4",
+    images: [
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300",
+    ],
+  },
+ 
+
 ];
 
 
@@ -105,7 +148,7 @@ let span = document.getElementsByClassName("close")[0];
 // When the user clicks on the button, open the modal and display the info
 for (let i =0; i < modals.length; i++) {
   let btn = modals[i];
-  // console.log(btn)
+  console.log(btn)
   let modalImgs = '';
   let modalTitle = '';
   let modalDescription = '';
@@ -133,6 +176,7 @@ for (let i =0; i < modals.length; i++) {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
+  projectImages.innerHTML = '';
 }
 
 // When the user clicks anywhere outside of the modal, close it
