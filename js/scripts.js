@@ -82,24 +82,24 @@ pieces = [
       "https://picsum.photos/200/300",
     ],
   },
- 
+
 
 ];
 
 
-   
 
-    //  <a class="card pushable modal-open">
-    //     <div class="card front">
-    //       <img class="thumbnail" src="/public/anglerBeast.jpg" alt="" />
-    //       <div class="card-body">
-    //         <h4 class="card-title mt-3">Watch for the Depths</h4>
-    //         <p class="card-text mt-3">
-    //           A digital painting inspired by Fantasy Generator Book
-    //         </p>
-    //       </div>
-    //     </div>
-    //   </a>
+
+//  <a class="card pushable modal-open">
+//     <div class="card front">
+//       <img class="thumbnail" src="/public/anglerBeast.jpg" alt="" />
+//       <div class="card-body">
+//         <h4 class="card-title mt-3">Watch for the Depths</h4>
+//         <p class="card-text mt-3">
+//           A digital painting inspired by Fantasy Generator Book
+//         </p>
+//       </div>
+//     </div>
+//   </a>
 
 function projectTemplate(project) {
   return `
@@ -114,7 +114,6 @@ function projectTemplate(project) {
         </div>
       </div>
     </a>
-   
   `
 }
 
@@ -124,7 +123,7 @@ function render(projects) {
   for (let i = 0; i < projects.length; i++) {
     projectTemplates += projectTemplate(projects[i]);
   }
-    projectContainer.insertAdjacentHTML('afterbegin', projectTemplates);
+  projectContainer.insertAdjacentHTML('afterbegin', projectTemplates);
 }
 
 
@@ -146,41 +145,41 @@ console.log(projectImages, projectTitle, projectDescription)
 let span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal and display the info
-for (let i =0; i < modals.length; i++) {
+for (let i = 0; i < modals.length; i++) {
   let btn = modals[i];
   console.log(btn)
   let modalImgs = '';
   let modalTitle = '';
   let modalDescription = '';
-  
-  btn.onclick = function(e) {
+
+  btn.onclick = function (e) {
     modal.style.display = "block";
-    
+
     //get the modal data
     modalImgs = pieces[i].images;
     modalTitle = pieces[i].title;
     modalDescription = pieces[i].description;
 
     //insert images
-    for (let i = 0; i < modalImgs.length; i++){
+    for (let i = 0; i < modalImgs.length; i++) {
       projectImages.innerHTML += insertImgs(modalImgs[i]);
       projectTitle.innerText = modalTitle;
       projectDescription.innerText = modalDescription;
 
-    } 
+    }
     // console.log(btn)
   }
 
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function () {
   modal.style.display = "none";
   projectImages.innerHTML = '';
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(e) {
+window.onclick = function (e) {
   if (e.target == modal) {
     modal.style.display = "none";
     projectImages.innerHTML = '';

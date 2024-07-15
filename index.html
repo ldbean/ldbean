@@ -52,7 +52,14 @@
 
     <section id="projects">
       <h1>projects</h1>
-      <div id="modal-window" class="modal">
+        <!-- Modal -->
+      <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="">
+        <div id="modalCaption"></div>
+      </div>
+      
+      <!-- <div id="modal-window" class="modal">
         <div class="modal-content">
           <div class="modal-header">
             <span class="close">&times;</span>
@@ -83,6 +90,10 @@
           alt="leighann baxa"
           id="self-portrait"
         />
+      </div> -->
+   
+      <div class="projects" id="projectContainer">
+        <!-- Gallery images will be dynamically added here -->
       </div>
     </section>
 
